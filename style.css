@@ -110,7 +110,8 @@ body {
 }
 
 .btn:hover {
-  background-color: #78a83a;
+  /* Slightly darker shade of our gold accent on hover */
+  background-color: #be9738;
 }
 
 /* Sub hero for internal pages */
@@ -156,8 +157,9 @@ body {
 }
 
 .section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
   font-weight: 600;
   text-align: center;
 }
@@ -165,7 +167,7 @@ body {
 .section p {
   max-width: 900px;
   margin: 0.5rem auto;
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--text-dark);
   text-align: center;
 }
@@ -180,19 +182,20 @@ body {
 }
 
 .feature {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--light);
+  padding: 1.8rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   flex: 1 1 220px;
   max-width: 260px;
   text-align: center;
 }
 
 .feature .icon {
-  font-size: 2.2rem;
-  color: var(--secondary);
-  margin-bottom: 0.6rem;
+  font-size: 2.4rem;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
 }
 
 .feature h3 {
@@ -215,10 +218,38 @@ body {
 
 .gallery-grid img {
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   object-fit: cover;
-  height: 200px;
+  height: 260px;
+}
+
+/* Two-column layout for the about page */
+.two-cols-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.two-cols-container .col-text {
+  flex: 1 1 50%;
+}
+
+.two-cols-container .col-img {
+  flex: 1 1 50%;
+}
+
+.two-cols-container img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .two-cols-container {
+    flex-direction: column;
+  }
 }
 
 /* Plans page specifics */
@@ -237,21 +268,24 @@ body {
 }
 
 /* Contact */
+/* Contact section styling */
+.contact-section {
+  background-color: var(--primary);
+  color: var(--text-light);
+  padding: 4rem 2rem;
+}
 .contact-section .contact {
   text-align: center;
 }
-
 .contact .fa-solid {
   margin-right: 0.5rem;
-  color: var(--secondary);
+  color: var(--accent);
 }
-
 .contact a {
-  color: var(--secondary);
+  color: var(--accent);
   text-decoration: none;
   font-weight: 500;
 }
-
 .contact a:hover {
   text-decoration: underline;
 }
