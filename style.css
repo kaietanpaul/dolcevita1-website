@@ -22,7 +22,10 @@ body {
 .hero {
     /* Zdjęcie nagłówka wczytywane z katalogu głównego repo */
     /* Używaj nowego kadrowanego zdjęcia nagłówka bez naniesionego tekstu. */
-    background-image: url('hero_cropped.jpg');
+        /* Using the cropped header image saved as hero.jpg to avoid text printed on the background.
+           hero_cropped.jpg has been merged back into hero.jpg in the repository, so we reference
+           hero.jpg here. */
+        background-image: url('hero.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
