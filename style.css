@@ -4,14 +4,25 @@
  * minimalistyczna typografia, elegancka kolorystyka i duże zdjęcia.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+/*
+ * Import a couple of modern typefaces.  Montserrat will still be used for
+ * certain accents and numerals, while Open Sans makes longer passages easy to
+ * read and Poppins lends premium flair to headings.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary: #1a2530;    /* ciemny granat do nawigacji i stopki */
-  --secondary: #425d8c; /* jasny granat do akcentów */
-  --accent: #8abf4a;    /* stonowana zieleń nawiązująca do natury */
-  --light: #f5f7fa;    /* jasne tło sekcji */
-  --text-dark: #1a2530;
+  /*
+   * Colour palette based off of premium real‑estate brands.  A deep navy for
+   * structural elements, a slightly lighter blue for secondary panels and a
+   * warm golden accent for calls‑to‑action.  A neutral light grey keeps
+   * backgrounds clean.
+   */
+  --primary: #0d1b2a;     /* dark navy used in nav and footer */
+  --secondary: #1b263b;   /* slightly lighter navy for sections */
+  --accent: #e09f3e;      /* warm gold accent for highlights */
+  --light: #f5f5f5;       /* light neutral background */
+  --text-dark: #1a1a1a;
   --text-light: #ffffff;
 }
 
@@ -22,7 +33,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: var(--light);
   color: var(--text-dark);
   line-height: 1.6;
@@ -42,10 +53,11 @@ body {
 }
 
 .navbar .logo a {
-  color: var(--text-light);
-  font-size: 1.4rem;
+  color: var(--accent);
+  font-size: 1.6rem;
   font-weight: 700;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 .nav-links {
@@ -68,11 +80,12 @@ body {
 
 /* Hero styles */
 .hero {
-  background-image: url('hero.jpg');
+  /* Combine a semi‑transparent gradient with the hero image for a refined overlay. */
+  background-image: linear-gradient(rgba(13, 27, 42, 0.6), rgba(13, 27, 42, 0.6)), url('hero.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 70vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,22 +93,23 @@ body {
 }
 
 .hero .overlay {
-  background-color: rgba(0, 0, 0, 0.55);
-  padding: 2rem 3rem;
-  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2.5rem 3rem;
+  border-radius: 10px;
   color: var(--text-light);
-  max-width: 700px;
+  max-width: 720px;
 }
 
 .hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0.8rem;
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
   font-weight: 700;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.8rem;
 }
 
 .btn {
@@ -111,16 +125,16 @@ body {
 
 .btn:hover {
   /* Slightly darker shade of our gold accent on hover */
-  background-color: #be9738;
+  background-color: #cf863c;
 }
 
 /* Sub hero for internal pages */
 .sub-hero {
-  background-image: url('hero.jpg');
+  background-image: linear-gradient(rgba(13, 27, 42, 0.6), rgba(13, 27, 42, 0.6)), url('hero.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,13 +196,13 @@ body {
 }
 
 .feature {
-  background-color: var(--light);
-  padding: 1.8rem;
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  flex: 1 1 220px;
-  max-width: 260px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.07);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  flex: 1 1 240px;
+  max-width: 300px;
   text-align: center;
 }
 
@@ -199,14 +213,15 @@ body {
 }
 
 .feature h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  color: var(--secondary);
+  font-family: 'Poppins', sans-serif;
 }
 
 .feature p {
   font-size: 0.95rem;
-  color: #555;
+  color: #666;
 }
 
 /* Gallery */
@@ -270,7 +285,7 @@ body {
 /* Contact */
 /* Contact section styling */
 .contact-section {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   color: var(--text-light);
   padding: 4rem 2rem;
 }
