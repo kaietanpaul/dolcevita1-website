@@ -1,67 +1,96 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DolceVita1 Otyń – domy, które dają oddech</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Hero section with background image and tagline -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DolceVita1&nbsp;Otyń – Nowoczesne domy pod Nową Solą</title>
+    <!-- Google font and Font Awesome icons -->
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-pddPoMyki1efxHUd0uaNpxXLMn3jkqyk+cSX1TFybC6sIh+lA0uPk33T9Vm44zeeqYm+Zlq/OLXUJrd7WGHlXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">DolceVita1</a></div>
+      <ul class="nav-links">
+        <li><a href="about.html">O&nbsp;inwestycji</a></li>
+        <li><a href="gallery.html">Galeria</a></li>
+        <li><a href="plans.html">Plany</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero section -->
     <header class="hero">
-        <!-- Pionowa etykieta odsyłająca do planu domu. Obok hero, inspirowana
-             projektem referencyjnym (zobacz apartamenty) – obracamy tekst o 90°
-             i umieszczamy go przy krawędzi ekranu. -->
-        <a href="#plan" class="side-label">Zobacz plan</a>
-        <div class="hero-overlay">
-            <h1>DolceVita1 – styl, komfort i spokój tuż pod Nową&nbsp;Solą</h1>
-            <p>Domy szeregowe o metrażach od 63&nbsp;m² do 104&nbsp;m²</p>
-            <a href="#contact" class="btn">Skontaktuj się z&nbsp;nami</a>
-        </div>
+      <div class="overlay">
+        <h1>Domy, które dają oddech</h1>
+        <p>
+          Kameralne osiedle w Otyniu – nowoczesne bliźniaki o powierzchni
+          63–104&nbsp;m² z własną działką i pełnym wyposażeniem.
+        </p>
+        <a href="about.html" class="btn">Dowiedz&nbsp;się więcej</a>
+      </div>
     </header>
 
-    <!-- Details section describing the development -->
-    <section class="details">
-        <h2>O&nbsp;inwestycji</h2>
+    <!-- Introduction section -->
+    <section class="section intro">
+      <div class="container">
+        <h2>Twoje nowe miejsce do życia</h2>
         <p>
-            DolceVita1 Otyń to nowoczesne osiedle domów szeregowych oferujące styl, komfort
-            oraz spokój w otoczeniu natury. Termin oddania inwestycji zaplanowano na
-            <strong>wrzesień&nbsp;2025</strong>. Pomagamy w finansowaniu, aby droga do Twojego
-            wymarzonego domu była jak najprostsza.
+          DolceVita1 to kompleks nowoczesnych domów pod Nową Solą. Zaprojektowane
+          z myślą o komforcie, energooszczędności i bliskości natury. Każdy lokal
+          posiada własną działkę, miejsce parkingowe oraz instalację
+          fotowoltaiczną w cenie.
         </p>
-        <div class="features">
-            <div class="feature">
-                <h3>Termin&nbsp;oddania</h3>
-                <p>Wrzesień&nbsp;2025</p>
-            </div>
-            <div class="feature">
-                <h3>Metraż&nbsp;domów</h3>
-                <p>63–104&nbsp;m²</p>
-            </div>
-            <div class="feature">
-                <h3>Lokalizacja</h3>
-                <p>ul. Jagodowa, Otyń (woj. lubuskie)</p>
-            </div>
+      </div>
+    </section>
+
+    <!-- Features section -->
+    <section class="section features-section">
+      <div class="container">
+        <h2>Dlaczego DolceVita1?</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="icon"><i class="fa-solid fa-leaf"></i></div>
+            <h3>Blisko natury</h3>
+            <p>Spokojna okolica tuż przy Zielonej Górze – idealna do życia i odpoczynku.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><i class="fa-solid fa-solar-panel"></i></div>
+            <h3>Fotowoltaika</h3>
+            <p>Panele słoneczne w standardzie obniżają koszty utrzymania domu.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><i class="fa-solid fa-car"></i></div>
+            <h3>Miejsca parkingowe</h3>
+            <p>Do każdego lokalu przypisane jest wygodne miejsce parkingowe.</p>
+          </div>
+          <div class="feature">
+            <div class="icon"><i class="fa-solid fa-wifi"></i></div>
+            <h3>Światłowód</h3>
+            <p>Nowoczesna infrastruktura zapewnia szybki internet w Twoim domu.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Floor plan gallery -->
-    <section class="plan" id="plan">
-        <h2>Rzut&nbsp;domu</h2>
-        <img src="plan.jpg" alt="Rzut domu DolceVita1 Otyń">
-    </section>
-
-    <!-- Contact information -->
-    <section class="contact" id="contact">
-        <h2>Kontakt</h2>
-        <p><strong>Adres:</strong> ul. Jagodowa, Otyń, Polska</p>
-        <p><strong>Telefon:</strong> <a href="tel:+48600990099">600&nbsp;990&nbsp;099</a></p>
-        <p><strong>Email:</strong> <a href="mailto:kratajczak1977@gmail.com">kratajczak1977@gmail.com</a></p>
-    </section>
-
-    <!-- Page footer -->
-    <footer>
-        <p>&copy;&nbsp;2025 DolceVita1 Otyń. Wszystkie prawa zastrzeżone.</p>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025&nbsp;DolceVita1&nbsp;Otyń. Wszelkie prawa zastrzeżone.</p>
     </footer>
-</body>
+  </body>
 </html>
