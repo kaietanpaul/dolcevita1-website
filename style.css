@@ -35,7 +35,10 @@ body {
 
 .hero-overlay {
     /* Lekko ciemniejszy overlay dla lepszej czytelności, inspirowany stroną referencyjną */
-    background: rgba(0, 0, 0, 0.55);
+    /* Nieco ciemniejszy overlay niż domyślnie. Zmniejszyliśmy nieprzezroczystość,
+       aby wyeksponować budynki i uniknąć zbyt mocnego kontrastu na tle tekstu.
+       Dzięki temu strona przypomina referencyjny projekt Harmony Group. */
+    background: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     border-radius: 8px;
 }
