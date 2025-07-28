@@ -21,7 +21,8 @@ body {
 /* Hero – pełnoekranowa sekcja z tłem i ciemnym overlayem */
 .hero {
     /* Zdjęcie nagłówka wczytywane z katalogu głównego repo */
-    background-image: url('hero.jpg');
+    /* Używaj nowego kadrowanego zdjęcia nagłówka bez naniesionego tekstu. */
+    background-image: url('hero_cropped.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
