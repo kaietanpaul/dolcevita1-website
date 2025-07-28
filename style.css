@@ -34,9 +34,35 @@ body {
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.45);
+    /* Lekko ciemniejszy overlay dla lepszej czytelności, inspirowany stroną referencyjną */
+    background: rgba(0, 0, 0, 0.55);
     padding: 2rem;
     border-radius: 8px;
+}
+
+/* Pionowa etykieta przy krawędzi hero
+   Obracamy tekst o 90° i przyklejamy do lewej krawędzi. */
+.side-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: rotate(-90deg) translate(-50%, -50%);
+    transform-origin: left top;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 2;
+    transition: background 0.3s ease;
+}
+
+.side-label:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .hero h1 {
